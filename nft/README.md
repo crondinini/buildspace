@@ -1,15 +1,18 @@
-# Basic Sample Hardhat Project
+# NFT Collection Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+In this folder, you'll find the implementation of the "Mint your own NFT collection" project from buildspace.
 
-Try running some of the following tasks:
+It uses Solidity and Hardhat.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+## Learnings
+
+- Hardhat is a tool that helps us compile and locally test smart contracts.
+
+- `hre` stands for Hardhat Runtime Environment and it's used in the script to deploy the contract.
+  - since the script is used in the context of running `npx hardhat`, the global object `hre` will have been built using `hardhard.config.js`.
+
+## How to run this project
+
+```
+npx hardhat run scripts/run.js
 ```
