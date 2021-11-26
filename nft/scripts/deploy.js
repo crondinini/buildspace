@@ -1,6 +1,6 @@
 const main = async () => {
   // hre stands for Hardhat Environment
-  const nftContractFactory = await hre.ethers.getContractFactory('MyNFT');
+  const nftContractFactory = await hre.ethers.getContractFactory('Zen');
   const nftContract = await nftContractFactory.deploy();
   await nftContract.deployed();
   console.log("Contract deployed to:", nftContract.address);

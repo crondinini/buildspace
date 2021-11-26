@@ -11,7 +11,7 @@ import "hardhat/console.sol";
 // We need to import the helper functions from the contract that we copy/pasted.
 import {Base64} from "./libraries/Base64.sol";
 
-contract MyNFT is ERC721URIStorage {
+contract Zen is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
